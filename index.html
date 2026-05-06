@@ -6,47 +6,78 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 </head>
-<body>
-    <section class="h-screen flex justify-between items-center bg-gray-900 text-white">
-        <div class="container mx-auto px-4">
-            <div>
-                <h1 class="text-6xl font-bold">Let’s talk about your project</h1>
-                <p>We help companies and individuals build out their brand guidelines.</p>
+<body class="font-nuckle">
+    <header class="flex justify-center items-center py-4 bg-gray-800">
+        <nav class="text-white">
+            <ul class="flex gap-6">
+                <li>
+                    <a href="#workcation" class="hover:text-gray-400">Workcation</a>
+                </li>
+                <li>
+                    <a href="#contact_us" class="hover:text-gray-400">Contact Us</a>
+                </li>
+                <li>
+                    <a href="#categories_1" class="hover:text-gray-400">Categories 1</a>
+                </li>
+                <li>
+                    <a href="#categories_2" class="hover:text-gray-400">Categories 2</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <section id="workcation" class="h-fit py-20 flex justify-between items-center bg-gray-900 text-white">
+        <div class="container mx-auto px-4 flex flex-col gap-16">
+            <div class="flex flex-col gap-2">
+                <h1 class="text-5xl font-bold">Let’s talk about your project</h1>
+                <p class="text-lg text-gray-400">We help companies and individuals build out their brand guidelines.</p>
             </div>
             
-            <div class="grid grid-cols-[2fr_1fr]">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr] gap-20">
                 <form action="" class="flex flex-col items-center gap-6 w-full text-start">
                     <div class="grid grid-cols-2 gap-10 w-full">
                         <div class="flex flex-col gap-3">
-                            <label for="firstname" class="text-base font-semibold text-white">First name</label>
+                            <label for="firstname" class="text-sm font-semibold text-white">First name</label>
                             <input type="text" id="firstname" class="p-2 rounded bg-gray-800 border border-gray-700 focus:outline-2 outline-indigo-400">
                         </div>
                         <div class="flex flex-col gap-3">
-                            <label for="lastname" class="text-base font-semibold text-white">Last name</label>
+                            <label for="lastname" class="text-sm font-semibold text-white">Last name</label>
                             <input type="text" id="lastname" class="p-2 rounded bg-gray-800 border border-gray-700 focus:outline-2 outline-indigo-400">
                         </div>
                         <div class="flex flex-col gap-3">
-                            <label for="budget" class="text-base font-semibold text-white">Budget</label>
+                            <label for="budget" class="text-sm font-semibold text-white">Budget</label>
                             <input type="text" id="budget" class="p-2 rounded bg-gray-800 border border-gray-700 focus:outline-2 outline-indigo-400">
                         </div>
                         <div class="flex flex-col gap-3">
-                            <label for="website" class="text-base font-semibold text-white">Website</label>
+                            <label for="website" class="text-sm font-semibold text-white">Website</label>
                             <input type="text" id="website" class="p-2 rounded bg-gray-800 border border-gray-700 focus:outline-2 outline-indigo-400">
                         </div>
                     </div>
                     <div class="flex flex-col gap-1 w-full">
-                        <label for="message" class="text-sm text-base font-semibold text-white">Message</label>
-                        <textarea name="message" id="message" class="p-2 h-40 rounded resize-none bg-gray-800 border border-gray-700 focus:outline-2 outline-indigo-400"></textarea>
+                        <label for="message" class="text-sm font-semibold text-white">Message</label>
+                        <textarea name="message" id="message" class="p-2 h-40 max-h-40 rounded resize-y bg-gray-800 border border-gray-700 focus:outline-2 outline-indigo-400"></textarea>
                     </div>
-                    <button class="py-2 px-8 w-fit bg-indigo-500 text-lg text-white rounded cursor-pointer hover:bg-indigo-600">Button</button>
+                    <button class="py-3 px-8 w-full bg-indigo-500 text-base font-semibold text-white rounded cursor-pointer hover:bg-indigo-600">Let's talk</button>
+                    <p class="text-gray-400 text-sm text-start w-full">By submitting this form, I agree to the <a href="#" class="text-indigo-600 hover:text-indigo-700 font-semibold">privacy policy</a>.</p>
                 </form>
+                <div class="flex flex-col gap-10 pt-6">
+                    <div class="h-12">
+                        <img src="img/workcation-logo-indigo-500.svg" alt="">
+                    </div>
+                    <p class="font-bold text-lg leading-8">“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”</p>
+                    <div class="flex gap-6">
+                        <img src="img/photo-1550525811-e5869dd03032.avif" alt="" class="w-12 h-12 rounded-full">
+                        <div>
+                            <span class="font-semibold text-base">Brenna Goyette</span>
+                            <p class="text-sm text-gray-400">CEO of Workcation</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
-        
     </section>
 
-    <section class="h-screen flex justify-between items-center">
+    <section id="contact_us" class="h-screen flex justify-between items-center">
         <div class="container mx-auto p-4 md:w-2/3 lg:w-1/3 flex flex-col text-center gap-10">
             <div class="flex flex-col gap-2">
                 <h1 class="text-2xl font-medium">Contact Us</h1>
@@ -82,7 +113,7 @@
         
 
     </section>
-    <section class="hidden md:grid grid-cols-1 gap-6 p-4 md:p-20 lg:p-40">
+    <section id="categories_1" class="hidden md:grid grid-cols-1 gap-6 p-4 md:p-20 lg:p-40">
         <article class="grid grid-cols-[256px_1fr] gap-6 h-fit">
             <div class="relative">
                 <img src="https://i.natgeofe.com/k/415419c5-3768-4c8f-8697-f90de7a6075b/russia-st-basils_16x9.jpg?w=1200" alt="">
@@ -102,7 +133,7 @@
         </article>
     </section>
 
-    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-20 lg:p-40">
+    <section id="categories_2" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4 md:p-20 lg:p-40">
         <article class="grid grid-rows-[250px_1fr] h-full border border-gray-300 rounded-xl overflow-hidden">
             <img src="https://static.rustore.ru/imgproxy/m1FsUZKCc1cCODEKaBuGGZfW6DECZRu6I3thwiqA1Jg/preset:web_scr_lnd_335/plain/https://static.rustore.ru/apk/1413714879/content/SCREENSHOT/0fcc8b54-87c7-465a-89cf-f109aa141083.png@webp" alt="" class="w-full h-full object-cover">
             <div class="flex flex-col gap-3 p-6">
